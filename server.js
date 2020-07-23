@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
     app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, 'front', 'build', 'index.html')));
 }
 
-const port = process.env.PORT;
+const port = process.env.PORT || 80;
 
 const server = app.listen(port, ()=>console.log(`connected to port ${port}`));
 
