@@ -56,7 +56,7 @@ export default class Game extends React.Component {
 
   componentDidMount(){
     // creating a webSocket that is associated with this Game component, so that it can be accessed from its other methods
-    this.socket = socketIOClient("http://192.168.0.102");
+    this.socket = socketIOClient();
 
     // This is so that the link to share is valid (contains a valid socketID to join, instead of null) 
     this.socket.on('connect', () => {
