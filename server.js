@@ -4,19 +4,18 @@ const path = require('path');
 
 const app = express();
 
-
 // serve static assets if in production
-if (process.env.PORT === 'production') {
+if (process.env.NODE_ENV === 'production') {
     // serving static files when in production. These files will be located in the build folder once build happens
     app.use(express.static("front/build"));
 
     // sending the html with any request that doesn't match the previous ones
     app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, 'front', 'build', 'index.html')));
 }
-const port = process.env.PORT || 80,
-    hostname = "0.0.0.0";
 
-const server = app.listen(port, hostname, ()=>console.log(`connected to ${hostname}:${port}`));
+const port = process.env.PORT;
+
+const server = app.listen(port, ()=>console.log(`connected to port ${port}`));
 
 // Setting up a socket on the server
 const io = socket(server);
