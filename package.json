@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gist.github.com/abe154301f3909798437203eceb8c051.git"
+    "url": "https://github.com/DaniMarts/TicTacToe.git"
   },
   "author": "Danilo Martins",
   "license": "ISC",
   "bugs": {
-    "url": "https://gist.github.com/abe154301f3909798437203eceb8c051"
+    "url": "https://github.com/DaniMarts/TicTacToe"
   },
-  "homepage": "https://gist.github.com/abe154301f3909798437203eceb8c051"
+  "homepage": "https://github.com/DaniMarts/TicTacToe"
 }
