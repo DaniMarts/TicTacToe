@@ -1,0 +1,93 @@
+html, body{
+  height: 100%;
+}
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  /* margin: 20px; */
+  align-content: center;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+button {
+  color: #999;
+  background-color: transparent;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #999;
+  font-weight: 600;
+  border-width: 1.5px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  border-radius: 0%;
+  color: black;
+}
+
+/* the squares to be higlighted when a player wins */
+.won{
+  background: #0d0; 
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-board {
+  min-width: 102px;
+  height: fit-content;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+  width: fit-content;
+  height: 70%;
+  margin: 20% auto;
+}
+
+.game-info {
+  margin: auto 20px;
+}
+
+div.share {
+  clear: both;
+  border: 1.5px solid black;
+  border-radius: 2px;
+  padding: 3px;
+  display: table-row;
+}
+
